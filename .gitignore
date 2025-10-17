@@ -1,0 +1,14 @@
+
+cat > .gitignore << EOF
+*.log
+venv/
+.DS_Store
+EOF
+
+python -m venv venv
+
+git status
+
+git add .gitignore
+git commit -m "Add .gitignore with basic rules"
+git push

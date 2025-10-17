@@ -1,0 +1,78 @@
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой виш-лист проектов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-item {
+            background: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .project-item:hover {
+            background: #d5dbdb;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+        .priority-high {
+            border-left-color: #e74c3c;
+        }
+        .priority-medium {
+            border-left-color: #f39c12;
+        }
+        .priority-low {
+            border-left-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Мой виш-лист проектов</h1>
+        
+        <ul class="project-list">
+            <li class="project-item priority-high">
+                <strong>Персональный блог</strong> - Платформа для ведения технического блога
+            </li>
+            <li class="project-item priority-high">
+                <strong>Трекер привычек</strong> - Приложение для отслеживания ежедневных привычек
+            </li>
+            <li class="project-item priority-medium">
+                <strong>Погодное приложение</strong> - С прогнозами и уведомлениями
+            </li>
+            <li class="project-item priority-medium">
+                <strong>Калькулятор расходов</strong> - Для управления личным бюджетом
+            </li>
+            <li class="project-item priority-low">
+                <strong>Игра-головоломка</strong> - На основе JavaScript
+            </li>
+            <li class="project-item priority-low">
+                <strong>API для блога</strong> - REST API с аутентификацией
+            </li>
+        </ul>
+    </div>
+</body>
